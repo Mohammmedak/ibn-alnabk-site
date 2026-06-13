@@ -111,16 +111,96 @@ export const menuCategories = [
     icon: "🍳",
     items: [
       {
-        name: "صنف تجريبي 1",
-        desc: "وصف قصير للصنف",
+        name: "خبز تميس",
+        desc: "",
         image: "/menu/placeholder.jpg",
-        prices: { SYP: "", USD: "", TRY: "" },
+        prices: { SYP: "10000", USD: "", TRY: "" },
       },
       {
-        name: "صنف تجريبي 2",
-        desc: "وصف قصير للصنف",
+        name: "صحن زيتون",
+        desc: "",
         image: "/menu/placeholder.jpg",
-        prices: { SYP: "", USD: "", TRY: "" },
+        prices: { SYP: "25000", USD: "", TRY: "" },
+        {
+        name: "صحن لبنة",
+        desc: "",
+        image: "/menu/placeholder.jpg",
+        prices: { SYP: "30000", USD: "", TRY: "" },
+        {
+        name: "صحن جبنة",
+        desc: "",
+        image: "/menu/placeholder.jpg",
+        prices: { SYP: "30000", USD: "", TRY: "" },
+        {
+        name: "صحن خضرة",
+        desc: "",
+        image: "/menu/placeholder.jpg",
+        prices: { SYP: "20000", USD: "", TRY: "" },
+        {
+        name: "حمص باللحمة",
+        desc: "100 g",
+        image: "/menu/placeholder.jpg",
+        prices: { SYP: "80000", USD: "", TRY: "" },
+        {
+        name: "فول بالزيت",
+        desc: "للشخص الواحد",
+        image: "/menu/placeholder.jpg",
+        prices: { SYP: "25000", USD: "", TRY: "" },
+        {
+        name: "فول بلبن",
+        desc: "للشخص الواحد",
+        image: "/menu/placeholder.jpg",
+        prices: { SYP: "25000", USD: "", TRY: "" },
+        {
+        name: "صحن زيتون",
+        desc: "",
+        image: "/menu/placeholder.jpg",
+        prices: { SYP: "25000", USD: "", TRY: "" },
+        {
+        name: "صحن زيتون",
+        desc: "",
+        image: "/menu/placeholder.jpg",
+        prices: { SYP: "25000", USD: "", TRY: "" },
+        {
+        name: "صحن زيتون",
+        desc: "",
+        image: "/menu/placeholder.jpg",
+        prices: { SYP: "25000", USD: "", TRY: "" },
+        {
+        name: "صحن زيتون",
+        desc: "",
+        image: "/menu/placeholder.jpg",
+        prices: { SYP: "25000", USD: "", TRY: "" },
+        {
+        name: "صحن زيتون",
+        desc: "",
+        image: "/menu/placeholder.jpg",
+        prices: { SYP: "25000", USD: "", TRY: "" },
+        {
+        name: "صحن زيتون",
+        desc: "",
+        image: "/menu/placeholder.jpg",
+        prices: { SYP: "25000", USD: "", TRY: "" },
+        {
+        name: "صحن زيتون",
+        desc: "",
+        image: "/menu/placeholder.jpg",
+        prices: { SYP: "25000", USD: "", TRY: "" },
+        {
+        name: "صحن زيتون",
+        desc: "",
+        image: "/menu/placeholder.jpg",
+        prices: { SYP: "25000", USD: "", TRY: "" },
+        {
+        name: "صحن زيتون",
+        desc: "",
+        image: "/menu/placeholder.jpg",
+        prices: { SYP: "25000", USD: "", TRY: "" },
+        {
+        name: "صحن زيتون",
+        desc: "",
+        image: "/menu/placeholder.jpg",
+        prices: { SYP: "25000", USD: "", TRY: "" },
       },
     ],
   },
