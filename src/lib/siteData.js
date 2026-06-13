@@ -111,12 +111,6 @@ export const menuCategories = [
     icon: "🍳",
     items: [
       {
-        name: "خبز تميس",
-        desc: "",
-        image: "/menu/placeholder.jpg",
-        prices: { SYP: "10000", USD: "", TRY: "" },
-      },
-      {
         name: "صحن زيتون",
         desc: "",
         image: "/menu/placeholder.jpg",
@@ -152,11 +146,77 @@ export const menuCategories = [
         image: "/menu/placeholder.jpg",
         prices: { SYP: "25000", USD: "", TRY: "" },
       },
-      {
+        {
         name: "فول بلبن",
         desc: "للشخص الواحد",
         image: "/menu/placeholder.jpg",
         prices: { SYP: "25000", USD: "", TRY: "" },
+      },
+      {
+        name: "حمص بالزيت",
+        desc: "للشخص الواحد",
+        image: "/menu/placeholder.jpg",
+        prices: { SYP: "25000", USD: "", TRY: "" },
+      },
+      {
+        name: "حمص باللبن",
+        desc: "للشخص الواحد",
+        image: "/menu/placeholder.jpg",
+        prices: { SYP: "25000", USD: "", TRY: "" },
+      },
+      {
+        name: "فتة بالزيت",
+        desc: "للشخص الواحد",
+        image: "/menu/placeholder.jpg",
+        prices: { SYP: "25000", USD: "", TRY: "" },
+      },
+      {
+        name: "فتة بالسمنة",
+        desc: "للشخص الواحد",
+        image: "/menu/placeholder.jpg",
+        prices: { SYP: "35000", USD: "", TRY: "" },
+      },
+      {
+        name: "زعتر ابن النبك",
+        desc: "",
+        image: "/menu/placeholder.jpg",
+        prices: { SYP: "7000", USD: "", TRY: "" },
+      },
+      {
+        name: "زعتر و قشوان",
+        desc: "",
+        image: "/menu/placeholder.jpg",
+        prices: { SYP: "7000", USD: "", TRY: "" },
+      },
+      {
+        name: "بيضة مقلية",
+        desc: "",
+        image: "/menu/placeholder.jpg",
+        prices: { SYP: "4000", USD: "", TRY: "" },
+      },
+       {
+        name: "خبز تميس",
+        desc: "",
+        image: "/menu/placeholder.jpg",
+        prices: { SYP: "10000", USD: "", TRY: "" },
+      },
+      {
+        name: "خبز تميس بالجبنة",
+        desc: "",
+        image: "/menu/placeholder.jpg",
+        prices: { SYP: "25000", USD: "", TRY: "" },
+      },
+      {
+        name: "خبز تميس دبل جبنة",
+        desc: "",
+        image: "/menu/placeholder.jpg",
+        prices: { SYP: "35000", USD: "", TRY: "" },
+      },
+      {
+        name: "صحن قشطة عربية",
+        desc: "",
+        image: "/menu/placeholder.jpg",
+        prices: { SYP: "35000", USD: "", TRY: "" },
       },
     ],
   },
