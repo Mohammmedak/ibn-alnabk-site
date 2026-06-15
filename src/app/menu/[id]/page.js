@@ -13,12 +13,10 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import MobileQuickActions from "@/components/MobileQuickActions";
 import CurrencySwitcher from "@/components/CurrencySwitcher";
-import ImageModal from "@/components/ImageModal";
 
 export default function CategoryPage() {
   const params = useParams();
   const [currency, setCurrency] = useState("SYP");
-  const [selectedItem, setSelectedItem] = useState(null);
 
   const category = menuCategories.find((c) => c.id === params.id);
 
@@ -88,23 +86,16 @@ export default function CategoryPage() {
                       : ""
                   }`}
                 >
-                  <button
-                    onClick={() => setSelectedItem(item)}
-                    className="relative h-20 w-20 shrink-0 overflow-hidden rounded-2xl bg-[#F4EBDD] sm:h-24 sm:w-24 transition hover:scale-105 hover:shadow-lg cursor-pointer"
-                  >
+                  <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-2xl bg-[#F4EBDD] sm:h-24 sm:w-24">
                     <Image
                       src={item.image}
                       alt={item.name}
                       fill
                       className="object-cover transition group-hover:scale-110"
                       sizes="96px"
+                      loading="lazy"
                     />
-                    <div className="absolute inset-0 flex items-center justify-center bg-black/0 transition hover:bg-black/30">
-                      <span className="text-2xl opacity-0 transition hover:opacity-100">
-                        🔍
-                      </span>
-                    </div>
-                  </button>
+                  </div>
 
                   <div className="flex-1 min-w-0">
                     <div className="flex items-start justify-between gap-3">
@@ -171,19 +162,12 @@ export default function CategoryPage() {
 
             <div className="mt-6 rounded-[20px] border border-[#E8DAC1] bg-[#FFFDF8] p-5 text-center shadow-sm">
               <p className="text-sm text-[#6B655C]">
-                💡 اضغط على صورة الصنف لعرضها بحجم أكبر
+                💡 الأسعار قابلة للتغيير حسب توفر المكونات. للاستفسار يرجى التواصل معنا.
               </p>
             </div>
           </div>
         </section>
       </main>
-
-      <ImageModal
-        item={selectedItem}
-        currency={currency}
-        currencyLabel={currencyLabel}
-        onClose={() => setSelectedItem(null)}
-      />
 
       <Footer />
       <MobileQuickActions
