@@ -13,10 +13,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import MobileQuickActions from "@/components/MobileQuickActions";
 import CurrencySwitcher from "@/components/CurrencySwitcher";
+import ImageModal from "@/components/ImageModal";
 
 export default function CategoryPage() {
   const params = useParams();
   const [currency, setCurrency] = useState("SYP");
+  const [selectedItem, setSelectedItem] = useState(null);
 
   const category = menuCategories.find((c) => c.id === params.id);
 
@@ -30,7 +32,6 @@ export default function CategoryPage() {
     TRY: "₺",
   };
 
-  // Find next and previous categories
   const currentIndex = menuCategories.findIndex((c) => c.id === params.id);
   const prevCategory = menuCategories[currentIndex - 1];
   const nextCategory = menuCategories[currentIndex + 1];
@@ -40,7 +41,6 @@ export default function CategoryPage() {
       <Header />
 
       <main className="min-h-screen bg-[#F4EBDD] pb-24 md:pb-0">
-        {/* ===== HERO ===== */}
         <section className="relative overflow-hidden bg-[#1F2E24] py-12 text-white">
           <div className="absolute inset-0">
             <div className="absolute -right-16 top-10 h-64 w-64 rounded-full bg-[#C6A75E]/10 blur-3xl" />
@@ -76,7 +76,6 @@ export default function CategoryPage() {
           </div>
         </section>
 
-        {/* ===== ITEMS LIST ===== */}
         <section className="py-12">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
             <div className="overflow-hidden rounded-[24px] border border-[#E8DAC1] bg-white shadow-sm">
@@ -89,7 +88,10 @@ export default function CategoryPage() {
                       : ""
                   }`}
                 >
-                  <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-2xl bg-[#F4EBDD] sm:h-24 sm:w-24">
+                  <button
+                    onClick={() => setSelectedItem(item)}
+                    className="relative h-20 w-20 shrink-0 overflow-hidden rounded-2xl bg-[#F4EBDD] sm:h-24 sm:w-24 transition hover:scale-105 hover:shadow-lg cursor-pointer"
+                  >
                     <Image
                       src={item.image}
                       alt={item.name}
@@ -97,7 +99,12 @@ export default function CategoryPage() {
                       className="object-cover transition group-hover:scale-110"
                       sizes="96px"
                     />
-                  </div>
+                    <div className="absolute inset-0 flex items-center justify-center bg-black/0 transition hover:bg-black/30">
+                      <span className="text-2xl opacity-0 transition hover:opacity-100">
+                        🔍
+                      </span>
+                    </div>
+                  </button>
 
                   <div className="flex-1 min-w-0">
                     <div className="flex items-start justify-between gap-3">
@@ -126,7 +133,6 @@ export default function CategoryPage() {
               ))}
             </div>
 
-            {/* Navigation Between Categories */}
             <div className="mt-8 grid gap-3 sm:grid-cols-2">
               {prevCategory ? (
                 <Link
@@ -165,12 +171,19 @@ export default function CategoryPage() {
 
             <div className="mt-6 rounded-[20px] border border-[#E8DAC1] bg-[#FFFDF8] p-5 text-center shadow-sm">
               <p className="text-sm text-[#6B655C]">
-                💡 الأسعار قابلة للتغيير حسب توفر المكونات. للاستفسار يرجى التواصل معنا.
+                💡 اضغط على صورة الصنف لعرضها بحجم أكبر
               </p>
             </div>
           </div>
         </section>
       </main>
+
+      <ImageModal
+        item={selectedItem}
+        currency={currency}
+        currencyLabel={currencyLabel}
+        onClose={() => setSelectedItem(null)}
+      />
 
       <Footer />
       <MobileQuickActions
