@@ -3,16 +3,15 @@ import { navLinks } from "@/lib/siteData";
 import Logo from "./Logo";
 
 function NavLinkItem({ item }) {
-  if (item.href.startsWith("#")) {
-    return (
-      <a
-        href={item.href}
-        className="text-sm font-medium text-white/85 hover:text-[#C6A75E]"
-      >
-        {item.label}
-      </a>
-    );
-  }
+  return (
+    <Link
+      href={item.href}
+      className="text-sm font-medium text-white/85 hover:text-[#C6A75E]"
+    >
+      {item.label}
+    </Link>
+  );
+}
 
   return (
     <Link
