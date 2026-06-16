@@ -32,12 +32,12 @@ export const whatsappMessage = encodeURIComponent(
 export const whatsappHref = `https://wa.me/${siteConfig.whatsappNumber}?text=${whatsappMessage}`;
 
 export const navLinks = [
-  { label: "الرئيسية", href: "#top" },
-  { label: "أقسامنا", href: "#sections" },
-  { label: "المعرض", href: "#gallery" },
+  { label: "الرئيسية", href: "/#top" },
+  { label: "أقسامنا", href: "/#sections" },
+  { label: "المعرض", href: "/#gallery" },
   { label: "المنيو", href: "/menu" },
-  { label: "صالة الأفراح", href: "#events" },
-  { label: "تواصل معنا", href: "#contact" },
+  { label: "صالة الأفراح", href: "/#events" },
+  { label: "تواصل معنا", href: "/#contact" },
 ];
 
 export const stats = [
