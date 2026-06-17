@@ -11,7 +11,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import MobileQuickActions from "@/components/MobileQuickActions";
 import SectionHeading from "@/components/SectionHeading";
-
+import SocialLinks from "@/components/SocialLinks";
 export default function HomePage() {
   return (
     <>
@@ -141,8 +141,7 @@ export default function HomePage() {
                     وأنيقة.
                   </p>
                   <p>
-                    لاحقًا سنضيف الصور الحقيقية، المنيو النهائي، واللوغو الرسمي
-                    بمجرد اعتماده.
+                    نحن نؤمن بأن التجربة المتكاملة تبدأ من المكان نفسه، ولهذا السبب تم تصميم المكان ليقدم كل ما تحتاجه لقضاء وقت ممتع مع العائلة والأصدقاء.
                   </p>
                 </div>
               </div>
@@ -154,7 +153,7 @@ export default function HomePage() {
                     على الأوتستراد مباشرة
                   </h3>
                   <p className="mt-3 leading-7 text-[#5A544B]">
-                    مقابل مدخل مدينة النبك، ليكون الوصول إليه سهلًا للزوار
+                    مقابل شرطة الطرق العامة - مدخل مدينة النبك الرئيسي، ليكون الوصول إليه سهلًا للزوار
                     والمسافرين.
                   </p>
                 </div>
@@ -173,7 +172,7 @@ export default function HomePage() {
                 <div className="rounded-3xl border border-[#E7D7BC] bg-[#FFFDF8] p-6 shadow-sm sm:col-span-2">
                   <p className="text-sm font-bold text-[#8D6B2D]">الفكرة</p>
                   <h3 className="mt-2 text-xl font-extrabold text-[#1F2E24]">
-                    QR على الطاولات + موقع سريع + منيو واضح
+                    QR على الطاولات + منيو واضح
                   </h3>
                   <p className="mt-3 leading-7 text-[#5A544B]">
                     الزبون يستطيع مسح الكود والانتقال مباشرة إلى صفحة المنيو أو
@@ -257,7 +256,6 @@ export default function HomePage() {
             <SectionHeading
               eyebrow="المعرض"
               title="لمحة بصرية عن أقسام المكان"
-              description="هذا القسم مجهز لعرض الصور الحقيقية للمكان. يمكنك إضافة الصور لاحقًا داخل مجلد public/images بنفس الأسماء المعتمدة، وستظهر مباشرة دون تعديل التصميم."
             />
 
             <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
@@ -341,21 +339,26 @@ export default function HomePage() {
                   {siteConfig.address}
                 </h3>
                 <p className="mt-4 leading-8 text-[#5A544B]">
-                  موقع مميز على أوتستراد دمشق، مقابل مدخل مدينة النبك.
+                  موقع مميز على أوتستراد دمشق، مقابل شرطة الطرق العامة - مدخل مدينة النبك.الرئيسي
                 </p>
 
                 <div className="mt-6 space-y-3 text-[#4F4A43]">
-                  <p>
-                    <span className="font-bold text-[#1F2E24]">الهاتف:</span>{" "}
-                    {siteConfig.phoneDisplay}
-                  </p>
-                  <p>
-                    <span className="font-bold text-[#1F2E24]">
-                      أوقات الدوام:
-                    </span>{" "}
-                    {siteConfig.workingHours}
-                  </p>
-                </div>
+  <p>
+    <span className="font-bold text-[#1F2E24]">الهاتف:</span>{" "}
+    {siteConfig.phoneDisplay}
+  </p>
+  <p>
+    <span className="font-bold text-[#1F2E24]">
+      أوقات الدوام:
+    </span>{" "}
+    {siteConfig.workingHours}
+  </p>
+</div>
+
+<div className="mt-6 border-t border-[#F0E5D0] pt-6">
+  <p className="mb-3 text-sm font-bold text-[#8D6B2D]">تابعنا على</p>
+  <SocialLinks size="md" />
+</div>
 
                 <div className="mt-6 grid gap-3 sm:grid-cols-2">
                   <a
