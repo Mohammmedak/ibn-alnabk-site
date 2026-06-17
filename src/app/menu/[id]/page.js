@@ -88,13 +88,15 @@ export default function CategoryPage() {
                 >
                   <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-2xl bg-[#F4EBDD] sm:h-24 sm:w-24">
                     <Image
-                      src={item.image}
-                      alt={item.name}
-                      fill
-                      className="object-cover transition group-hover:scale-110"
-                      sizes="96px"
-                      loading="lazy"
-                    />
+  src={item.image}
+  alt={item.name}
+  fill
+  className="object-cover transition group-hover:scale-110"
+  sizes="96px"
+  loading="lazy"
+  placeholder="blur"
+  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
+/>
                   </div>
 
                   <div className="flex-1 min-w-0">
