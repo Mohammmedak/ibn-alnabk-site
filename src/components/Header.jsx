@@ -13,16 +13,6 @@ function NavLinkItem({ item }) {
   );
 }
 
-  return (
-    <Link
-      href={item.href}
-      className="text-sm font-medium text-white/85 hover:text-[#C6A75E]"
-    >
-      {item.label}
-    </Link>
-  );
-}
-
 export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-[#C6A75E]/20 bg-[#1F2E24]/95 backdrop-blur">
